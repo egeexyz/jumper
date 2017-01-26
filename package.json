@@ -1,0 +1,24 @@
+{
+  "name": "jumper",
+  "version": "0.1.0",
+  "description": "Prototype Game",
+  "author": "Egee",
+  "main": "main.js",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "electron .",
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egee-irl/cuddly-barnacle"
+  },
+  "devDependencies": {
+    "eslint": "^3.0.0",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "jasmine": "^2.5.2",
+    "jasmine-node": "^1.14.5"
+  }
+}

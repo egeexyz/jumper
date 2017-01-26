@@ -1,0 +1,14 @@
+{
+    "extends": "standard",
+    "env": {
+        "jasmine": true
+    },
+    "rules": {
+        "no-undef":"off",
+        "space-before-function-paren":"off"
+    },
+    "plugins": [
+        "standard",
+        "promise"
+    ]
+}

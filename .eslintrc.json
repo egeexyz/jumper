@@ -4,8 +4,7 @@
         "jasmine": true
     },
     "rules": {
-        "no-undef":"off",
-        "space-before-function-paren":"off"
+        "no-undef":"off"
     },
     "plugins": [
         "standard",

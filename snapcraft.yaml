@@ -1,0 +1,26 @@
+name: jumper  
+version: '0.1.0'
+summary: Jumper! A fun little game
+description: It's a fun little game up to the last star
+
+grade: stable
+confinement: classic
+
+apps:
+  game:
+    command: electron $SNAP/main.js
+
+parts:
+  game:
+    plugin: dump
+    source: https://github.com/egee-irl/jumper.git
+    stage:
+      - assets
+      - js
+      - main.js
+      - index.html
+    prime:
+      - assets
+      - js
+      - main.js
+      - index.html

@@ -9,8 +9,8 @@ let win
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 817,
+    height: 617,
     icon: path.join(__dirname, 'assets/jump-across.png')
   })
 

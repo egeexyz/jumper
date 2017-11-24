@@ -6,14 +6,20 @@ game = new (Phaser.Game)(800, 600, Phaser.AUTO, '',
 class Square
   constructor: -> x * x
 
-`function preload () {}`
-`function create (){}`
-`function update () {}`
+`function preload () {
+  preload()
+}`
+`function create (){
+  create()
+}`
+`function update () {
+  update()
+}`
 
-# preload = () ->
+preload = () ->
 
-# create = () ->
+create = () ->
 
-# update = () ->
+update = () ->
 
 

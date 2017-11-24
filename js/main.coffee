@@ -10,16 +10,6 @@ cursors = null
 platforms = null
 scoreText = null
 
-`function preload () {
-  preload()
-}`
-`function create (){
-  create()
-}`
-`function update () {
-  update()
-}`
-
 preload = () ->
   game.load.image('sky', 'assets/sky.png')
   game.load.image('ground', 'assets/platform.png')
@@ -84,3 +74,13 @@ collectStar = (player, star) ->
   star.kill()
   score += 10
   scoreText.text = 'Score: ' + score
+
+`function preload () {
+  preload()
+}`
+`function create (){
+  create()
+}`
+`function update () {
+  update()
+}`

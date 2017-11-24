@@ -20,18 +20,6 @@
 
   scoreText = null;
 
-  function preload () {
-  preload()
-};
-
-  function create (){
-  create()
-};
-
-  function update () {
-  update()
-};
-
   preload = function() {
     game.load.image('sky', 'assets/sky.png');
     game.load.image('ground', 'assets/platform.png');
@@ -100,6 +88,18 @@
     score += 10;
     return scoreText.text = 'Score: ' + score;
   };
+
+  function preload () {
+  preload()
+};
+
+  function create (){
+  create()
+};
+
+  function update () {
+  update()
+};
 
 }).call(this);
 

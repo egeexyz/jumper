@@ -15,12 +15,6 @@
   },
   "devDependencies": {
     "coffeescript": "^2.0.2",
-    "electron": "^1.7.9",
-    "eslint": "^3.0.0",
-    "eslint-config-standard": "^5.3.5",
-    "eslint-plugin-promise": "^2.0.0",
-    "eslint-plugin-standard": "^2.0.0",
-    "jasmine": "^2.5.2",
-    "jasmine-node": "^1.14.5"
+    "electron": "^1.7.9"
   }
 }

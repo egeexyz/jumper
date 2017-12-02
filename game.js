@@ -1,4 +1,15 @@
-const game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update })
+const game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
+  preload: preload,
+  create: create,
+  update: update })
+
+let score = 0
+
+let scoreText
+let platforms
+let diamonds
+let cursors
+let player
 
 function preload () {
   game.load.image('sky', 'assets/sky.png')
@@ -6,14 +17,6 @@ function preload () {
   game.load.image('diamond', 'assets/diamond.png')
   game.load.spritesheet('woof', 'assets/woof.png', 32, 32)
 }
-let score = 0
-
-let scoreText
-let platforms
-let cursors
-let player
-let diamonds
-
 
 function create () {
     //  We're going to be using physics, so enable the Arcade Physics system
@@ -69,7 +72,7 @@ function create () {
   for (var i = 0; i < 12; i++) {
     let diamond = diamonds.create(i * 70, 0, 'diamond')
 
-      //  Drop em from the sky and make them bounce a bit
+      //  Drop em from the sky and bounce a bit
     diamond.body.gravity.y = 1000
     diamond.body.bounce.y = 0.3 + Math.random() * 0.2
   }
@@ -82,7 +85,6 @@ function create () {
 }
 
 function update () {
-
     //  We want the player to stop when not moving
   player.body.velocity.x = 0
 
@@ -113,7 +115,8 @@ function update () {
   }
     // You win!
   if (score === 120) {
-    // alert('You win!')
+    alert('You win!')
+    score = 0
   }
 }
 

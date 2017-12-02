@@ -1,3 +1,2 @@
-node_modules
-stage
-prime
+.eslintrc.json
+.vscode

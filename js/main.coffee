@@ -10,13 +10,13 @@ cursors = null
 platforms = null
 scoreText = null
 
-preload = () ->
+preload = ->
   game.load.image('sky', 'assets/sky.png')
   game.load.image('ground', 'assets/platform.png')
   game.load.image('star', 'assets/star.png')
   game.load.spritesheet('dude', 'assets/dude.png', 32, 48)
 
-create = () ->
+create = ->
   game.physics.startSystem(Phaser.Physics.ARCADE)
   game.add.sprite(0, 0, 'sky')
 
@@ -52,7 +52,7 @@ create = () ->
   scoreText = game.add.text(16, 16, '', { fontSize: '32px', fill: '#000' })
   cursors = game.input.keyboard.createCursorKeys()
 
-update = () ->
+update = ->
   game.physics.arcade.collide(player, platforms)
   game.physics.arcade.collide(stars, platforms)
   game.physics.arcade.overlap(player, stars, collectStar, null, this)

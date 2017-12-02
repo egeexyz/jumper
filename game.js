@@ -1,4 +1,4 @@
-let game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update })
+const game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update })
 
 function preload () {
   game.load.image('sky', 'assets/sky.png')
@@ -6,14 +6,14 @@ function preload () {
   game.load.image('star', 'assets/star.png')
   game.load.spritesheet('dude', 'assets/dude.png', 32, 48)
 }
+let score = 0
 
-let player
+let scoreText
 let platforms
 let cursors
-
+let player
 let stars
-let score = 0
-let scoreText
+
 
 function create () {
     //  We're going to be using physics, so enable the Arcade Physics system

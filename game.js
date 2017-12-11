@@ -1,10 +1,11 @@
+// Initialize the Phaser Game object and set default game window size
 const game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
   preload: preload,
   create: create,
   update: update })
 
+// Declare shared variables at the top so all methods can access them
 let score = 0
-
 let scoreText
 let platforms
 let diamonds
@@ -12,6 +13,7 @@ let cursors
 let player
 
 function preload () {
+  // Load & Define our game assets
   game.load.image('sky', 'assets/sky.png')
   game.load.image('ground', 'assets/platform.png')
   game.load.image('diamond', 'assets/diamond.png')
@@ -113,7 +115,7 @@ function update () {
   if (cursors.up.isDown && player.body.touching.down) {
     player.body.velocity.y = -400
   }
-    // You win!
+    // Show an alert modal when score reaches 120
   if (score === 120) {
     alert('You win!')
     score = 0

@@ -1,0 +1,33 @@
+{
+  "name": "jumpdude",
+  "version": "0.1.0",
+  "description": "[![Maintainability](https://api.codeclimate.com/v1/badges/04601514cd7b18f394a8/maintainability)](https://codeclimate.com/github/egee-irl/jumper/maintainability) [![Discord](https://discordapp.com/api/guilds/183740337976508416/widget.png?style=shield)](https://discord.gg/tVyBHAU)",
+  "main": "game.js",
+  "scripts": {
+    "start": "npm run build && node node_modules/.bin/http-server ./dist",
+    "build": "cp src/* dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egee-irl/jumper.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egee-irl/jumper/issues"
+  },
+  "homepage": "https://github.com/egee-irl/jumper#readme",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "phaser": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}

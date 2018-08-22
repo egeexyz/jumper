@@ -1,16 +1,8 @@
 // Initialize the Phaser Game object and set default game window size
-const config = {
-  type: Phaser.AUTO,
-  width: 800,
-  height: 600,
-  scene: {
-    preload: preload,
-    create: create,
-    update: update
-  }
-};
-
-let game = new Phaser.Game(config);
+const game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
+  preload: preload,
+  create: create,
+  update: update })
 
 // Declare shared variables at the top so all methods can access them
 let score = 0
@@ -22,10 +14,10 @@ let player
 
 function preload () {
   // Load & Define our game assets
-  game.load.image('sky', 'assets/sky.png')
-  game.load.image('ground', 'assets/platform.png')
-  game.load.image('diamond', 'assets/diamond.png')
-  game.load.spritesheet('woof', 'assets/woof.png', 32, 32)
+  game.load.image('sky', '../assets/sky.png')
+  game.load.image('ground', '../assets/platform.png')
+  game.load.image('diamond', '../assets/diamond.png')
+  game.load.spritesheet('woof', '../assets/woof.png', 32, 32)
 }
 
 function create () {

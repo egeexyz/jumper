@@ -1,0 +1,29 @@
+{
+  "builders" : [{
+    "type": "docker",
+    "image": "node:8",
+    "commit": "true",
+    "changes": [
+      "CMD [\"npm\", \"start\"]"
+    ]
+  }],
+  "provisioners": [{
+    "type": "file",
+    "source": "jumper.tar.gz",
+    "destination": "/jumper.tar.gz"
+  },
+  {
+    "type": "shell",
+    "inline": ["tar -zxf jumper.tar.gz", "npm install"]    
+  }],
+  "post-processors": [
+    [
+      {
+        "type": "docker-tag",
+        "repository": "540854239492.dkr.ecr.us-west-2.amazonaws.com/eg-jumper",
+        "tag": "latest"
+      },
+      "docker-push"
+    ]
+  ]
+}

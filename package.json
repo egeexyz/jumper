@@ -4,9 +4,7 @@
   "description": "[![Maintainability](https://api.codeclimate.com/v1/badges/04601514cd7b18f394a8/maintainability)](https://codeclimate.com/github/egee-irl/jumper/maintainability) [![Discord](https://discordapp.com/api/guilds/183740337976508416/widget.png?style=shield)](https://discord.gg/tVyBHAU)",
   "main": "game.js",
   "scripts": {
-    "start": "npm run build && node node_modules/.bin/http-server ./dist",
-    "build": "cp src/* dist/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node node_modules/.bin/http-server ./public"
   },
   "repository": {
     "type": "git",

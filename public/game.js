@@ -2,7 +2,8 @@
 const game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
   preload: preload,
   create: create,
-  update: update })
+  update: update
+})
 
 // Declare shared variables at the top so all methods can access them
 let score = 0
@@ -34,7 +35,7 @@ function create () {
   platforms.enableBody = true
 
   // Here we create the ground.
-  let ground = platforms.create(0, game.world.height - 64, 'ground')
+  const ground = platforms.create(0, game.world.height - 64, 'ground')
 
   //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
   ground.scale.setTo(2, 2)
@@ -72,7 +73,7 @@ function create () {
 
   //  Create 12 diamonds evenly spaced apart
   for (var i = 0; i < 12; i++) {
-    let diamond = diamonds.create(i * 70, 0, 'diamond')
+    const diamond = diamonds.create(i * 70, 0, 'diamond')
 
     //  Drop em from the sky and bounce a bit
     diamond.body.gravity.y = 1000

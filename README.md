@@ -9,10 +9,10 @@ A basic platformer game written with [PhaserJS](https://phaser.io/) **v2** to de
 
 This repository is configured to be as simple as possible; build, deploy, and play with `npm`.
 
-### Build Dependencies
+### Build Dependencies 🚧
 
 The only dependencies are NodeJS & npm. Any NodeJS LTS version will work. A minified version of PhaserJS v2.0.1 is included in the repository. Simply clone this repo and run `npm install`.
 
-### Play The Game
+### Play The Game 🕹️
 
 Just run `npm start` and go to `localhost:8080` in your favorite web browser.

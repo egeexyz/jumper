@@ -20,7 +20,7 @@
     [
       {
         "type": "docker-tag",
-        "repository": "540854239492.dkr.ecr.us-west-2.amazonaws.com/eg-jumper",
+        "repository": "dkr.ecr.us-west-2.amazonaws.com/eg-jumper",
         "tag": "latest"
       },
       "docker-push"

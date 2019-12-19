@@ -7,7 +7,7 @@ A basic platformer game written with [PhaserJS](https://phaser.io/) **v2** to de
 
 ## Getting Started
 
-This repository is configured to be as simple as possible; build, deploy, and play with `npm`.
+This repository is configured to be as simple as possible; build, deploy, and play with all with **npm**.
 
 ### Build Dependencies 🚧
 

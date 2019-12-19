@@ -3,10 +3,10 @@ services: docker
 language: node_js
 node_js: "8"
 script: tar -czf jumper.tar.gz *
-deploy:
-  - provider: script
-    script: ./post-build/packer.sh
-    skip_cleanup: true
-    on:
-      tags: true
+# deploy:
+#   - provider: script
+#     script: ./post-build/packer.sh
+#     skip_cleanup: true
+#     on:
+#       tags: true
 

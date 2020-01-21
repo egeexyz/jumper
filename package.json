@@ -1,7 +1,7 @@
 {
   "name": "jumper",
   "version": "1.0.0",
-  "description": "[![Maintainability](https://api.codeclimate.com/v1/badges/04601514cd7b18f394a8/maintainability)](https://codeclimate.com/github/egee-irl/jumper/maintainability) [![Discord](https://discordapp.com/api/guilds/183740337976508416/widget.png?style=shield)](https://discord.gg/tVyBHAU)",
+  "description": "A basic platformer game written with PhaserJS v2 to demonstrate basic game functions",
   "main": "game.js",
   "scripts": {
     "start": "node node_modules/.bin/http-server ./public"

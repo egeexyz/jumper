@@ -3,7 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/04601514cd7b18f394a8/maintainability)](https://codeclimate.com/github/egee-irl/jumper/maintainability)
 [![Discord](https://discordapp.com/api/guilds/183740337976508416/widget.png?style=shield)](https://discord.gg/tVyBHAU)
 
-A basic platformer game written with [PhaserJS](https://phaser.io/) **v2** to demonstrate basic game functions.
+A basic platformer game written with [PhaserJS](https://phaser.io/) **2.0** to demonstrate basic game functions.
 
 ## Getting Started
 

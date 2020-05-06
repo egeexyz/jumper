@@ -1,0 +1,28 @@
+name: jumper  
+version: '0.1.0'
+summary: Jumper! A fun little game
+description: It's a fun little game up to the last star
+
+base: core18
+
+grade: stable
+confinement: classic
+
+apps:
+  game:
+    command: jumper
+
+parts:
+  game:
+    plugin: nodejs
+    source: .
+    # stage:
+    #   - assets
+    #   - js
+    #   - main.js
+    #   - index.html
+    # prime:
+    #   - assets
+    #   - js
+    #   - main.js
+    #   - index.html

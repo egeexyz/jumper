@@ -4,7 +4,11 @@
   "description": "A basic platformer game written with PhaserJS v2 to demonstrate basic game functions",
   "main": "game.js",
   "scripts": {
-    "start": "node node_modules/.bin/http-server ./public"
+    "start": "./node_modules/.bin/electron main.js",
+    "serve": "./node node_modules/.bin/http-server ./public"
+  },
+  "bin": {
+    "jumper": "main.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,7 @@
   },
   "homepage": "https://github.com/egee-irl/jumper#readme",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "electron": "^8.5.2",
+    "http-server": "^0.12.3"
   }
 }

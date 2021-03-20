@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/egee-irl/jumper#readme",
   "dependencies": {
-    "electron": "^8.5.2",
+    "electron": "^9.4.0",
     "http-server": "^0.12.3"
   }
 }

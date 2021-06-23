@@ -5,7 +5,7 @@
   "main": "game.js",
   "scripts": {
     "start": "./node_modules/.bin/electron main.js",
-    "serve": "./node node_modules/.bin/http-server ./public"
+    "serve": "./node_modules/.bin/http-server ./public"
   },
   "bin": {
     "jumper": "main.js"

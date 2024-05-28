@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  jumper:
+    image: ghcr.io/egeexyz/jumper:latest
+    container_name: jumper
+    ports:
+      - 8080:8080

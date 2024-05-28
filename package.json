@@ -1,11 +1,12 @@
 {
   "name": "jumper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A basic platformer game written with PhaserJS v2 to demonstrate basic game functions",
   "main": "game.js",
   "scripts": {
     "start": "./node_modules/.bin/electron main.js",
-    "serve": "./node_modules/.bin/http-server ./public"
+    "serve": "./node_modules/.bin/http-server ./public",
+    "test": "./node_modules/.bin/cucumber-js"
   },
   "bin": {
     "jumper": "main.js"
@@ -23,5 +24,9 @@
   "dependencies": {
     "electron": "^6.1.12",
     "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "cucumber": "^6.0.7",
+    "selenium-webdriver": "^4.21.0"
   }
 }

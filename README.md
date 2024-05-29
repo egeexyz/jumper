@@ -7,7 +7,7 @@ A basic platformer game written with [PhaserJS](https://phaser.io/) **2.0** to d
 
 ## Getting Started
 
-This repository is configured to be as simple as possible; build, deploy, and play with all with **npm**.
+This repository is configured to be as simple as possible; build, deploy, and play with all with **npm**! The game's [code](https://github.com/egeexyz/jumper/blob/master/public/src/game.js) is neatly written and annotated to help you figure out how it all works.
 
 First, clone or download this repository and run `npm install`.
 

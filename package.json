@@ -1,6 +1,6 @@
 {
   "name": "jumper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A basic platformer game written with PhaserJS v2 to demonstrate basic game functions",
   "main": "game.js",
   "scripts": {

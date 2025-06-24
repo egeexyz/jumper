@@ -1,4 +1,4 @@
-version: "3.8"
+---
 services:
   jumper:
     image: ghcr.io/egeexyz/jumper:latest

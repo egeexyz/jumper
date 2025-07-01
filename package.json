@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/egeexyz/jumper#readme",
   "dependencies": {
-    "electron": "^22.3.25",
+    "electron": "^28.3.2",
     "http-server": "^14.1.1"
   }
 }
